@@ -1,0 +1,110 @@
+.hero {
+  position: relative;
+  padding-top: 84px;
+  height: 100vh;
+  overflow: hidden;
+
+  &--desktop {
+    display: none;
+
+    + .grid,
+    + .grid--carousel,
+    + .grid--sticky {
+      margin-top: 120px;
+    }
+
+    @include respond-to(sm) {
+      display: block;
+
+      + .grid,
+      + .grid--carousel,
+      + .grid--sticky {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &--restaurant {
+    padding-top: calc(84px + 45px);
+
+    @include respond-to(sm) {
+      padding-top: 84px;
+    }
+  }
+
+  @include respond-to(sm) {
+    height: 100vh;
+  }
+
+  &__restaurant {
+    position: fixed;
+    top: 84px;
+    left: 0;
+    right: 0;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    z-index: 20;
+    @include transition;
+
+    @include when-inside('.nav-is-hidden') {
+      top: 0;
+    }
+
+    @include respond-to(sm) {
+      display: none;
+    }
+  }
+
+  &__img-wrap {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    height: calc(100% - 20px);
+
+    @include respond-to(lg) {
+      margin-bottom: 40px;
+      height: calc(100% - 40px);
+    }
+    @include respond-to(xl) {
+      margin-bottom: 3vw;
+      height: calc(100% - 3vw);
+    }
+
+    // &::before {
+    //   position: absolute;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   height: 250px;
+    //   opacity: 0.6;
+    //   background-image: linear-gradient(to top, #000, rgba(#fff, 0));
+    //   content: '';
+    // }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+  }
+
+  &__btn.scroll-link {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 1.5rem;
+
+    svg {
+      margin-top: 10px;
+      width: 23px;
+      height: 50px;
+      fill: #fff;
+    }
+  }
+}

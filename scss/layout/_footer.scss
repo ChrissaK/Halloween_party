@@ -1,0 +1,77 @@
+// // -----------------------------------------------------------------------------
+// // This file contains all styles related to the footer of the site/application.
+// // -----------------------------------------------------------------------------
+// .page-footer {
+//   position: relative;
+//   padding-top: 45px;
+//   padding-bottom: 25px;
+//   background-color: $dark-blue;
+//
+//   @include respond-to(sm) {
+//     margin-top: 190px;
+//     padding-top: 40px;
+//     padding-bottom: 30px;
+//   }
+//
+//   &--no-btn {
+//     margin-top: 0;
+//
+//     .scroll-link.scroll-link--top {
+//       display: none;
+//     }
+//   }
+//
+//   &__nav {
+//     margin-bottom: 40px;
+//
+//     ul {
+//       column-count: 2;
+//       list-style: none;
+//     }
+//
+//     li {
+//       margin-bottom: 30px;
+//     }
+//
+//     a {
+//       font-size: 1.5rem;
+//       color: #fff;
+//       text-transform: uppercase;
+//
+//       @include on-event {
+//         color: $brand-color;
+//       }
+//     }
+//
+//     @include respond-to(sm) {
+//       ul {
+//         column-count: 4;
+//       }
+//     }
+//     @include respond-to(md) {
+//       margin-bottom: 25px;
+//       ul {
+//         margin: 0 auto;
+//         max-width: $max-width;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         column-count: unset;
+//       }
+//
+//       li {
+//         margin-bottom: 0;
+//       }
+//     }
+//   }
+//   .scroll-link {
+//     display: none;
+//
+//     @include respond-to(md) {
+//       position: absolute;
+//       left: 5vw;
+//       top: -170px;
+//       display: flex;
+//     }
+//   }
+// }

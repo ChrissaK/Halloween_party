@@ -1,0 +1,48 @@
+/**
+ * Basic typography style for copy text
+ */
+
+html {
+  // This defines what 1 rem is
+  font-size: 62.5%;
+}
+
+body {
+
+}
+
+
+h1 {
+  font-weight: 300;
+  // font-family: 'WhispersCalligraphy', serif;
+  // font-family: 'Sedgwick Ave Display', cursive;
+  font-family: 'Italianno', cursive;
+
+
+  // font-family: 'WhispersCalligraphy', serif;
+
+  font-size: 2.8rem;
+
+  @include respond-to(sm) {
+    font-size: 3.4rem;
+  }
+}
+
+p {
+  font-weight: 300;
+  // font-family: 'BethEllen', serif;
+  // font-family: 'Bilbo Swash Caps', cursive;
+  font-family: 'Italianno', cursive;
+
+
+  // font-family: 'BethEllen', serif;
+  // font-family: 'BethEllen', serif;
+
+  font-size: 3rem;
+}
+
+
+
+a {
+  font-weight: 400;
+}

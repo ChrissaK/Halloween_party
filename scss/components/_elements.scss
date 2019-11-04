@@ -1,0 +1,82 @@
+.story {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ccc;
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  &-header {
+    opacity: 0;
+    animation: revealnoreveal 4s ease-in;
+    animation-delay: 2s;
+  }
+
+  &-body {
+    opacity: 0;
+    animation: revealnoreveal 12s ease-in;
+    animation-delay: 6s;
+
+    // &:nth-of-type(1) {
+    //   animation-delay: 3s;
+    // }
+    // &:nth-of-type(2) {
+    //   animation-delay: 4s;
+    // }
+    // &:nth-of-type(3) {
+    //   animation-delay: 5s;
+    // }
+    // &:nth-of-type(4) {
+    //   animation-delay: 6s;
+    // }
+  }
+
+  &-info {
+    opacity: 0;
+    animation: reveal 6s ease-in forwards;
+    animation-delay: 16s;
+    position: absolute;
+    top: 50%;
+    // position: relative;
+    // top: -150px;
+  }
+
+  .info-title {
+    // text-decoration: underline;
+    margin-right: 6px;
+    position: relative;
+    &::after {
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      width: 100%;
+      content: '';
+      height: 1px;
+      background: #FF0000;
+    }
+  }
+
+  .vampire {
+    text-shadow: 2px 2px #FF0000;
+  }
+
+  .note {
+    margin-top: 15px;
+    color: #FF0000;
+  }
+
+}
+
+.clock {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  height: auto;
+  max-width: 500px;
+
+  animation: reveal 2s ease-in;
+}
