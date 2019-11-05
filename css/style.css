@@ -12,6 +12,18 @@
   100% {
     opacity: 1; } }
 
+@-webkit-keyframes reveal_opacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+
+@keyframes reveal_opacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+
 @-webkit-keyframes revealnoreveal {
   0% {
     opacity: 0; }
@@ -719,8 +731,8 @@ html.disable-scrolling {
     opacity: 0;
     -webkit-animation: revealnoreveal 3s ease-in;
     animation: revealnoreveal 3s ease-in;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s; }
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s; }
   .story-body {
     opacity: 0;
     -webkit-animation: revealnoreveal 14s ease-in;
@@ -766,3 +778,20 @@ html.disable-scrolling {
   max-width: 500px;
   -webkit-animation: reveal 2s ease-in;
   animation: reveal 2s ease-in; }
+
+.clef {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 80px;
+  height: auto;
+  opacity: 0.5;
+  -webkit-animation: reveal_opacity 2s ease-in;
+  animation: reveal_opacity 2s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  cursor: pointer; }
+  .clef:hover {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+    opacity: 0.7; }

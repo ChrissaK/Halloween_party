@@ -57,11 +57,25 @@
 
       <!-- <img  src="../img/bat.gif" alt=""/> -->
 
-      <img class="clock" src="../img/old-grandfather-clock.gif" alt="" />
-      <audio autoplay>
-        <source src="audio/vampire-waltz.mp3" type="audio/mpeg">
+      <img class="clock" src="img/old-grandfather-clock.gif" alt="" />
+      <img class="clef" src="img/clef.png" alt="" />
+      <audio id="music">
+        <source src="audio/vampire-waltz.mp3" type="audio/mp3">
       Your browser does not support the audio element.
       </audio>
     </div>
 
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/jquery-3.3.1.min.js"><\/script>'
+        );
+    </script>
+    <script src="js/main.js"></script>
   </body>
+</html>

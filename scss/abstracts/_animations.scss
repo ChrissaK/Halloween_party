@@ -7,6 +7,15 @@
     }
 }
 
+@keyframes reveal_opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
 @keyframes revealnoreveal {
     0% {
       opacity: 0;
