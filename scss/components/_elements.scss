@@ -44,15 +44,15 @@
   .info-title {
     margin-right: 6px;
     position: relative;
-    &::after {
-      position: absolute;
-      bottom: 5px;
-      left: 0;
-      width: 100%;
-      content: '';
-      height: 1px;
-      background: #FF0000;
-    }
+    // &::after {
+    //   position: absolute;
+    //   bottom: 5px;
+    //   left: 0;
+    //   width: 100%;
+    //   content: '';
+    //   height: 1px;
+    //   background: #FF0000;
+    // }
   }
 
   .vampire {
